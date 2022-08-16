@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+:root {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Work Sans", sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+
+/* Header & Nav */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 3rem 3rem;
+  max-width: 102rem;
+  font-size: 1.5rem;
+}
+header div {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+}
+header div img {
+  height: 2rem;
+}
+header nav ul {
+  display: flex;
+  gap: 1.4rem;
+}
+header nav li {
+  list-style: none;
+}
+
+/* Main Content */
+main {
+  /* viewport height - header height - footer height */
+  min-height: calc(100vh - 80px - 65px);
+  max-width: 102rem;
+  margin: 0 auto;
+  /* Intro Text */
+  /* Cards */
+}
+main .hero {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5rem 3rem;
+  /* Button Styling */
+}
+main .hero h1 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+main .hero .intro {
+  font-size: 1.6rem;
+  font-weight: 100;
+  margin-bottom: 4rem;
+}
+main .hero a {
+  text-transform: uppercase;
+  background: #000;
+  color: #eee;
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  display: flex;
+  gap: 0.33rem;
+  align-items: center;
+  width: fit-content;
+}
+main .hero a img {
+  height: 20px;
+  transform: translateY(1px);
+}
+main .cards {
+  padding: 0 3rem;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .cards .article-1 {
+  height: 40rem;
+  width: 30rem;
+  padding: 30px;
+  font-size: 12px;
+  color: #eee;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./images/white-box.jpg");
+}
+main .cards .article-1 h2 {
+  margin: 4rem 0;
+  padding-right: 4rem;
+  text-shadow: -5px 0px 20px rgb(47, 47, 47);
+}
+main .cards .article-1 img {
+  background: #eee;
+  border-radius: 50%;
+  height: 2rem;
+  padding: 5px;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.25);
+}
+main .cards .article-1 img:hover {
+  box-shadow: 0 0 0 5px rgb(255, 255, 255);
+}
+main .cards .article-2 {
+  height: 40rem;
+  width: 30rem;
+  padding: 30px;
+  font-size: 12px;
+  color: #eee;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./images/room.jpg");
+  background-position: left center;
+}
+main .cards .article-2 h2 {
+  margin: 4rem 0;
+  padding-right: 4rem;
+  text-shadow: -5px 0px 20px rgb(47, 47, 47);
+}
+main .cards .article-2 img {
+  background: #eee;
+  border-radius: 50%;
+  height: 2rem;
+  padding: 5px;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.25);
+}
+main .cards .article-2 img:hover {
+  box-shadow: 0 0 0 5px rgb(255, 255, 255);
+}
+main .cards .article-3 {
+  height: 40rem;
+  width: 30rem;
+  padding: 30px;
+  font-size: 12px;
+  color: #eee;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./images/black-white.jpg");
+}
+main .cards .article-3 h2 {
+  margin: 4rem 0;
+  padding-right: 4rem;
+  text-shadow: -5px 0px 20px rgb(47, 47, 47);
+}
+main .cards .article-3 img {
+  background: #eee;
+  border-radius: 50%;
+  height: 2rem;
+  padding: 5px;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.25);
+}
+main .cards .article-3 img:hover {
+  box-shadow: 0 0 0 5px rgb(255, 255, 255);
+}
+
+/* Footer */
+footer {
+  display: flex;
+  font-size: 1.3rem;
+  color: grey;
+  padding: 2.5rem;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
