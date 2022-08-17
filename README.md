@@ -117,9 +117,9 @@ The `src` folder contains any file you would want to add to your website. **This
 
 `index.html` is the main page for your website which you will be working on. Feel free to add any new `html` pages you create directly in the `src` folder.
 
-### `sassy-css.scss`
+### `main.scss`
 
-The `sassy-css` file will contain any `scss` code you will be writing.
+The `main.scss` file will contain any `scss` code you will be writing.
 
 ### `images`
 
