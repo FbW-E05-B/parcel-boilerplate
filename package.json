@@ -13,5 +13,8 @@
     "@parcel/transformer-sass": "^2.7.0",
     "gh-pages": "^4.0.0",
     "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0"
   }
 }
