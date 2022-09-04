@@ -2,7 +2,8 @@
 
 An HTML CSS boilerplate with built-in sass support:
 
-- Development server powered by [parcel](https://parceljs.org/) with sass compilation and auto-reload.
+- Development setup powered by sass compiler [sass](https://www.npmjs.com/package/sass)
+- production build powered by [parcel](https://parceljs.org/)
 - Deployments to github pages with [gh-pages](https://www.npmjs.com/package/gh-pages)
 
 ## Get Started
@@ -50,7 +51,7 @@ An HTML CSS boilerplate with built-in sass support:
 
    ```
    git init
-   git add . && git commit -m "Initial commit"
+   git add . && git commit -m "initial commit"
    ```
 
 6. Install the dependencies
@@ -65,7 +66,7 @@ An HTML CSS boilerplate with built-in sass support:
 
 ### Development
 
-Run **parcel-live-server** and start coding!
+Run **sass-compiler** in watch mode and start coding!
 
 ```
 npm start
@@ -73,7 +74,7 @@ npm start
 
 ### Production
 
-Compile source code from **src** and create an optimized production bundle in **dist** folder ready for **deployment**.
+Compile source code from **src** and create an optimized production bundle in **build** folder ready for **deployment**.
 
 ```
 npm run build
@@ -81,7 +82,7 @@ npm run build
 
 ### Deploy to Github Pages
 
-Deploy your code to **Github Pages**: this script creates a 'gh-pages' branch and publishes the **dist** folder. For this to work, make sure you already have a remote repository on github.
+Deploy your code to **Github Pages**: this script creates a 'gh-pages' branch and publishes the **build** folder. For this to work, make sure you already have a remote repository on github.
 
 ```
 npm run publish
@@ -98,9 +99,14 @@ Project
 |   package-lock.json
 └───src
 │   │   index.html
-│   |   sassy-css.scss
-|   └───images
-└───dist
+│   |   images
+|   └───styles
+|            |  _base.scss
+|            |  _variables.scss
+|            |  main.scss
+|            |
+|            └───compiled
+└───build
 ```
 
 ### `README.md`
@@ -111,27 +117,30 @@ The README should contain a brief description of your project, feel free to dele
 
 These files contain various information about you, your project and the project dependencies, as well as useful scripts to help you with the development process.
 
-### `src` & `index.html`
+### `src`
 
 The `src` folder contains any file you would want to add to your website. **This is the main folder you will be working in**.
-
-`index.html` is the main page for your website which you will be working on. Feel free to add any new `html` pages you create directly in the `src` folder.
-
-### `main.scss`
-
-The `main.scss` file will contain any `scss` code you will be writing.
 
 ### `images`
 
 Contains all images of your project
 
-### `dist`
+### `index.html`
 
-The `dist` folder will be automatically generated whenever your run the start or build script:
+is the main page for your website which you will be working on. Feel free to add any new `html` pages you create directly in the `src` folder.
 
-```bash
-npm start
-npm run build
-```
+#### `styles/main.scss`
 
-`npm start` will create a non optimized bundle and `npm run build` will create an optimized production bundle, ready to be deployed. It is excluded from `git` tracking since it is not customary to include compiled code in a development project.
+The `main.scss` file will contain any `scss` code you will be writing.
+
+#### `styles/_base.scss`
+
+The `_base.scss` may be used as a normalizer or css reset
+
+#### `styles/_variables`
+
+Contains custom variables to overwrite bootstrap default values
+
+#### `styles/compiled`
+
+Contains the compiled css
